@@ -10,6 +10,7 @@ Currently implemented:
 - 2 to 4 note arpegiator. Speed and pitches can be specified for each notes.
 
 melody settings is currently hard-coded.
+** This is a Work in progress **
 
 # YMZ294 connections
 

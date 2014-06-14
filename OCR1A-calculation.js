@@ -1,5 +1,5 @@
 /**
- * compute OCR1A from BPM and division (javascript function)
+ * compute OCR1A from BPM and division
  */
 
 function getOCR1A(bpm, division, prescaler) {

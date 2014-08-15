@@ -66,8 +66,8 @@ A LED can be connected to pin 8 of arduino and will flash every beat.
   PIN11 ───────┬─────> write enable ────> /WR─┤1 ● └─┘  18├─D0  ┐ LSB
     +5V ──>    └─────>  chip select ────> /CS─┤2        17├─D1  │
   PIN12 ──> address / data selector ────>  A0─┤3   YMZ  16├─D2  │
-                                +5V ────> VDD─┤4   294  15├─D3  ├─ DATA <─── Arduino PIN 0-7
-                      analog output <────  S0─┤5        14├─D4  │            or Shift register
+                                +5V ────> VDD─┤4   294  15├─D3  ├─ DATA <─── Arduino
+                      analog output <────  S0─┤5        14├─D4  │            PIN 0-7
                                 GND ────> GND─┤6        13├─D5  │
     crystal oscillator output──>CLK ────>  φM─┤7        12├─D6  │
            CLK RATE (H=4MHz, L=8MHz)────> 4/8─┤8        11├─D7  ┘ MSB

@@ -69,17 +69,18 @@ A LED can be connected to pin 8 of arduino and will flash every beat.
                                 +5V ────> VDD─┤4   294  15├─D3  ├─ DATA <─── Arduino
                       analog output <────  S0─┤5        14├─D4  │            PIN 0-7
                                 GND ────> GND─┤6        13├─D5  │
-    crystal oscillator output──>CLK ────>  φM─┤7        12├─D6  │
-           CLK RATE (H=4MHz, L=8MHz)────> 4/8─┤8        11├─D7  ┘ MSB
-         +5V(or floating) ──> reset ────> /IC─┤9        10├─/TEST <──── test <── +5V (or floating)
-                                              └───────────┘
-
-                    ┌───────┐
-                Vcc─┤8     5├─OUTPUT
-                    │  C012 │
-                 NC─┤1●    4├─GND
-                    └───────┘
-            (C012 crystal oscillator)
+ ┌──crystal oscillator output──>CLK ────>  φM─┤7        12├─D6  │
+ │         CLK RATE (H=4MHz, L=8MHz)────> 4/8─┤8        11├─D7  ┘ MSB
+ │       +5V(or floating) ──> reset ────> /IC─┤9        10├─/TEST <──── test <── +5V (or floating)
+ │                                            └───────────┘
+ └──────────────────────────────┐
+                                │
+              ┌───────┐         │
+          Vcc─┤8     5├─OUTPUT──┘
+              │  C012 │
+           NC─┤1●    4├─GND
+              └───────┘
+      (C012 crystal oscillator)
  
  
 ```
